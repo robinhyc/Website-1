@@ -1,0 +1,121 @@
+/* Color Palette: Dark Green (#1b3022), Light Pink (#f8c8dc) */
+:root {
+    --dark-green: #1b3022;
+    --light-pink: #f8c8dc;
+    --off-white: #fafafa;
+    --text-dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--off-white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: var(--dark-green);
+    color: var(--light-pink);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--light-pink);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.hero {
+    height: 80vh;
+    background-color: var(--dark-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-pink);
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--light-pink);
+    color: var(--dark-green);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #f3b1cd;
+}
+
+.products {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.placeholder-img {
+    height: 300px;
+    background-color: #ddd;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.about {
+    background-color: var(--light-pink);
+    color: var(--dark-green);
+    padding: 100px 10%;
+    text-align: center;
+}
+
+footer {
+    padding: 40px;
+    background: var(--dark-green);
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
